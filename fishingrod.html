@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Вудки</title>
+<link rel="stylesheet" href="fishingrod.css">
+</head>
+<body>
+
+<header>
+    <h1>🎣 Вудки</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="fishingrog.html">Вудки</a>
+    <a href="coil.html">Котушки</a>
+    <a href="lures.html">Приманки</a>
+    <a href="contact.html">Контакти</a>
+</nav>
+
+<div class="cart" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="cart-box" class="cart-box">
+    <h3>🛒 Ваш кошик</h3>
+    <ul id="cart-items"></ul>
+    <hr>
+    <p><b>Сума: <span id="cart-total">0</span> грн</b></p>
+</div>
+
+<section class="products">
+
+<div class="card">
+    <h3>Набір Спінінг із мультиплікаторною котушкою + ПОДАРУНОК (шнур)</h3>
+    <p>1050 грн</p>
+    <img src="./images/1vudka.webp" alt="">
+    <button onclick="addToCart('набір вудки з катушкою+ПОДАРУНОК',1050  )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Удилище Daiwa 21 Gekkabijin MX 68L-S･N 2.03м 0.5-8г NEW</h3>
+    <p>10000 грн</p>
+    <img src="./images/2vudka.webp" alt="">
+    <button onclick="addToCart('Удилище Daiwa 21 Gekkabijin MX 68L-S･N 2.03м 0.5-8г NEW',10000 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Спінінг набір на хижу рибу + подарунок (шнур)</h3>
+    <p>1500 грн</p>
+    <img src="./images/3vudka.webp" alt="">
+    <button onclick="addToCart('Спінінг набір на хижу рибу + подарунок (шнур)',1500 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Риболовний набір "Під усі види лову"</h3>
+    <p>700 грн</p>
+    <img src="./images/4vudka.webp" alt="">
+    <button onclick="addToCart('Риболовний набір під усі види лову',700 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Вудилище коропове Libao Carp Hunter 3.60м 3.5lb</h3>
+    <p>2500 грн</p>
+    <img src="./images/5vudka.webp" alt="">
+    <button onclick="addToCart('Вудилище коропове Libao Carp Hunter 3.60м 3.5lb',2500 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Карповий набір Feima Raven 3 вудилища + 3 котушки + род-под + сигналізатори + свінгери </h3>
+    <p>18999 грн</p>
+    <img src="./images/6vudka.webp" alt="">
+    <button onclick="addToCart('Карповий набір Feima Raven 3 вудилища + 3 котушки + род-под + сигналізатори + свінгери', 18999)">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Спиннинговый набор Daiwa Procaster 2.44m 15-50g RS 3000-C 0.19mm Orange</h3>
+    <p>3800 грн</p>
+    <img src="./images/7vudka.webp" alt="">
+    <button onclick="addToCart('Спиннинговый набор Daiwa Procaster 2.44m 15-50g RS 3000-C 0.19mm Orange',3800 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Вудка зимова Rapala Classic Ice Rod 50 0.38m</h3>
+    <p>500 грн</p>
+    <img src="./images/8vudka.webp" alt="">
+    <button onclick="addToCart('Вудка зимова Rapala Classic Ice Rod 50 0.38m',500 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Вудилище Brain Болонське вудлище Apex Traveller см</h3>
+    <p>999 грн</p>
+    <img src="./images/9vudka.webp" alt="">
+    <button onclick="addToCart('Вудилище Brain Болонське вудлище Apex Traveller см',999 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Вудка телескопічна LEO 28049 спінінг вудлище для риболовлі 2.1 м</h3>
+    <p>450 грн</p>
+    <img src="./images/10vudka.webp" alt="">
+    <button onclick="addToCart('Вудка телескопічна LEO 28049 спінінг вудлище для риболовлі 2.1 м',450 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Махове вудлище Zeox Element EX pole 5м.</h3>
+    <p>899 грн</p>
+    <img src="./images/11vudka.webp" alt="">
+    <button onclick="addToCart('Махове вудлище Zeox Element EX pole 5м.',899 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Болонська вудка Siweida Exclusive Black 5m з кільцями</h3>
+    <p>950 грн</p>
+    <img src="./images/12vudka.webp" alt="">
+    <button onclick="addToCart('Болонська вудка Siweida Exclusive Black 5m з кільцями',950 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>vВудка поплавчана в зборі 4 м. (2 шт) + Чохол 1.30 м.</h3>
+    <p>1488 грн</p>
+    <img src="./images/13vudka.webp" alt="">
+    <button onclick="addToCart('Вудка поплавчана в зборі 4 м. (2 шт) + Чохол 1.30 м.',1488 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Вудка карбонова поплавкова з кільцями (скорочена) Weida Best Master 5м</h3>
+    <p>999 грн</p>
+    <img src="./images/14vudka.webp" alt="">
+    <button onclick="addToCart('Вудка карбонова поплавкова з кільцями (скорочена) Weida Best Master 5м',999 )">Купити</button>
+</div>
+
+<div class="card">
+    <h3>Вудилище болонське Feima Black Hawk</h3>
+    <p>813 грн</p>
+    <img src="./images/15vudka.webp" alt="">
+    <button onclick="addToCart('Вудилище болонське Feima Black Hawk',813 )">Купити</button>
+</div>
+
+
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Приманки</title>
+<link rel="stylesheet" href="lures.css">
+</head>
+<body>
+
+<header>
+    <h1>🎣 Приманки</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="fishingrog.html">Вудки</a>
+    <a href="coil.html">Котушки</a>
+    <a href="lures.html">Приманки</a>
+    <a href="contact.html">Контакти</a>
+</nav>
+
+<div class="cart" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+<div id="cart-box" class="cart-box">
+    <h3>🛒 Ваш кошик</h3>
+    <ul id="cart-items"></ul>
+    <hr>
+    <p><b>Сума: <span id="cart-total">0</span> грн</b></p>
+</div>
+
+<section class="products">
+
+<div class="card">
+    <h3>Gold Pike</h3>
+    <p>100 грн</p>
+    <button onclick="addToCart('Gold Pike', 100)">Купити</button>
+</div>
+<div class="card">
+    <h3>Gold Pike</h3>
+    <p>100 грн</p>
+    <button onclick="addToCart('Gold Pike', 100)">Купити</button>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

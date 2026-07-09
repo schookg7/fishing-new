@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishShop - Магазин рибалки</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="cart" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+
+    <div id="cart-box" class="cart-box">
+        <h3>🛒 Ваш кошик</h3>
+        <ul id="cart-items"></ul>
+        <div id="cart-box" class="cart-box">
+            <h3>🛒 Ваш кошик</h3>
+
+            <ul id="cart-items"></ul>
+
+            <hr>
+
+            <p><b>Сума: <span id="cart-total">0</span> грн</b></p>
+        </div>
+    </div>
+</head>
+
+<body>
+
+    <header>
+        <h1>🎣 FishShop</h1>
+        <p>Все для справжньої рибалки</p>
+    </header>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="fishingrod.html">Вудки</a>
+        <a href="coil.html">Котушки</a>
+        <a href="lures.html">Приманки</a>
+        <a href="contact.html">Контакти</a>>
+    </nav>
+
+
+    <section class="hero">
+        <h2>Все для успішної рибалки</h2>
+        <p>Вудки, котушки, приманки та аксесуари</p>
+        <button>Переглянути товари</button>
+    </section>
+
+    <h2>Популярні товари</h2>
+    <section class="products">
+
+        <div class="product-grid">
+
+            <div class="card">
+                <img src="./images/spinning.webp" alt="">
+                <h3>Вудка Libao Active Spin(2)</h3>
+                <p>999 грн</p>
+                <p>довжина:2.10 м.</p>
+                <p>тест:3-15г.</p>
+
+                <button onclick="addToCart('Вудка Libao Active Spin(2)', 999)">
+                    Купити
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="./images/coil.webp" alt="">
+                <h3>Котушка Shimano Twin Power 24 C3000 FE</h3>
+                <p>15000 грн</p>
+
+                <button onclick="addToCart('Котушка Shimano Twin Power 24 C3000 FE', 15000)">
+                    Купити
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="./images/milk.webp" alt="">
+                <h3>Блешня Gold Pike</h3>
+                <p>100 грн</p>
+
+                <button onclick="addToCart('Блешня Gold Pike', 100)">
+                    Купити
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="./images/volosin.webp" alt="">
+                <h3>Волосінь Sunline Siglon V 150 м 0,260 мм 6 кг Прозорий</h3>
+                <p>199 грн</p>
+
+                <button onclick="addToCart('Волосінь Sunline Siglon V', 199)">
+                    Купити
+                </button>
+            </div>
+
+    </section>
+    </div>
+    </section>
+
+    <section class="advantages">
+        <h2>Чому обирають нас?</h2>
+
+        <div class="adv-grid">
+            <div>🚚 Швидка доставка</div>
+            <div>💰 Доступні ціни</div>
+            <div>⭐ Якісні товари</div>
+            <div>🎣 Великий вибір</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 FishShop. Всі права захищені.</p>
+    </footer>
+
+</body>
+<script>
+    let cartCount = 0;
+    let cartTotal = 0;
+
+    function addToCart(product, price) {
+        cartCount++;
+        cartTotal += price;
+
+        document.getElementById("cart-count").textContent = cartCount;
+        document.getElementById("cart-total").textContent = cartTotal;
+
+        const item = document.createElement("li");
+        item.textContent = product + " - " + price + " грн";
+
+        document.getElementById("cart-items").appendChild(item);
+    }
+
+    function toggleCart() {
+        const box = document.getElementById("cart-box");
+
+        if (box.style.display === "block") {
+            box.style.display = "none";
+        } else {
+            box.style.display = "block";
+        }
+    }
+</script>
+</script>
+
+</html>

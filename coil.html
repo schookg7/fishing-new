@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Котушки</title>
+    <link rel="stylesheet" href="coil.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎣 Котушки</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="fishingrod.html">Вудки</a>
+        <a href="coil.html">Котушки</a>
+        <a href="lures.html">Приманки</a>
+        <a href="contact.html">Контакти</a>
+    </nav>
+
+    <div class="cart" onclick="toggleCart()">
+        🛒 <span id="cart-count">0</span>
+    </div>
+
+    <div id="cart-box" class="cart-box">
+        <h3>🛒 Ваш кошик</h3>
+        <ul id="cart-items"></ul>
+        <hr>
+        <p><b>Сума: <span id="cart-total">0</span> грн</b></p>
+    </div>
+
+    <section class="products">
+
+        <div class="card">
+            <h3>
+                Катушка FR ULTRA 2+1BB 4000</h3>
+            <p>699 грн</p>
+            <img src="./images/1coil.webp" alt="">
+            <button onclick="addToCart('Катушка FR ULTRA 2+1BB 4000',699 )">Купити</button>
+        </div>
+        <div class="card">
+            <h3>Котушка безінерційна FISHERMAN 7000</h3>
+            <p>999 грн</p>
+            <img src="./images/2coil.webp" alt="">
+            <button onclick="addToCart('Котушка безінерційна FISHERMAN 7000', 999)">Купити</button>
+        </div>
+        <div class="card">
+            <h3>Котушка безінерційна FISHERMAN 7000</h3>
+            <p>1400 грн</p>
+            <img src="./images/3coil.webp" alt="">
+            <button onclick="addToCart('Котушка безінерційна FISHERMAN 7000v',1400 )">Купити</button>
+        </div>
+        <div class="card">
+            <h3>Котушка Shimano FX FC</h3>
+            <p>950 грн</p>
+            <img src="./images/4coil.webp" alt="">
+            <button onclick="addToCart('Котушка Shimano FX FC', 950)">Купити</button>
+        </div>
+        <div class="card">
+            <h3>Котушка Flagman RedFire 2500S</h3>
+            <p>972 грн</p>
+            <img src="./images/5coil.webp" alt="">
+            <button onclick="addToCart('Котушка Flagman RedFire 2500S', 972)">Купити</button>
+        </div>
+        <div class="card">
+            <h3>Котушка Brain Apex 20 5+1BB</h3>
+            <p>744 грн</p>
+            <img src="./images/6coil.webp" alt="">
+            <button onclick="addToCart('Котушка Brain Apex 20 5+1BB',744 )">Купити</button>
+        </div>
+        <div class="card">
+            <h3>Котушка Flagman Bonus Screw-іn handle</h3>
+            <p>699 грн</p>
+            <img src="./images/7coil.webp" alt="">
+            <button onclick="addToCart('Котушка Flagman Bonus Screw-іn handle', 699)">Купити</button>
+        </div>
+        <div class="card">
+            <h3>Котушка фідерна Flagman 24 Sherman Pro New Generation Method Feeder 4500 FS з бейтранером червона. </h3>
+            <p>1799 грн</p>
+            <img src="./images/8coil.webp" alt="">
+            <button
+                onclick="addToCart('Котушка фідерна Flagman 24 Sherman Pro New Generation Method Feeder 4500 FS з бейтранером червона. ', 1799)">Купити</button>
+        </div>
+        <div class="card">
+            <h3>Котушка Teben TN 3000 </h3>
+            <p>892 грн</p>
+            <img src="./images/coil 3000.webp" alt="">
+            <button onclick="addToCart('Котушка Teben TN 3000 ', 892)">Купити</button>
+        </div>
+        <div class="card">
+            <h3> зимова котушка </h3>
+            <p>32 грн</p>
+            <img src="./images/zumova.webp" alt="">
+            <button onclick="addToCart(' зимова котушка  ', 32  )">Купити</button>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
